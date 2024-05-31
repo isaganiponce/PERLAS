@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In | Margalo</title>
+    <link rel="stylesheet" href="lognIn.css">
+    <script src="logIn.js"></script>
+</head>
+<body>
+    <div id="LogIn">
+        <div class="container">
+            <div class="videobackground">
+                <video autoplay loop muted>
+                    <source src="images/video/ocean aerial view.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="logIn">
+                <img src="images/background/logIn.png" class="pearlBg"/>
+                <form>
+                    <h2>LOG IN</h2>
+                    <p>Welcome back!<br>Log in to your account!</p>
+                    <span id="errorMessage"></span>
+                    <div class="emailPassword">
+                        <input placeholder="Email" type="text" name="email" id="email" autocomplete="off">
+                        <label for="email">Email:</label>
+                        <input placeholder="Password" type="password" name="password" id="password" autocomplete="off">
+                        <label for="password">Password:</label> 
+                        <button type="button" class="btnLogIn" onClick="LogIn()">Log In</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

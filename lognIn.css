@@ -1,0 +1,108 @@
+@font-face {
+    font-family: "JosefinBold";
+    src: url("font/josefin/JosefinSans-Bold.ttf");
+}
+@font-face {
+    font-family: "Inter";
+    src: url("font/inter/Inter-SemiBold.ttf");
+}
+*{
+    margin: 0px;
+    overflow-y: hidden;
+}
+
+.videobackground video{
+    width: 100%;
+    position: relative;
+}
+
+.logIn{
+    top: 0px;
+    display: flex;
+    margin-left: 30%;
+    margin-top: 7%;
+    position: absolute;
+    border: solid white;
+    border-width: 2px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 7px 6px -1px rgba(255,255,255,.3); 
+    form{
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 60px;
+    }
+}
+.pearlBg{
+    width: 300px;
+    height: 400px;
+}
+.logIn h2{
+    font-family: "josefinbold";
+    padding-bottom: 2vw;
+    font-size: 2vw;
+}
+.logIn p{
+    font-family: "inter";
+    line-height: 18px;
+    padding-bottom: 10px;
+}
+
+.logIn span{
+    font-family: "inter";
+    font-size: 10px;
+    color: red;
+} 
+
+.emailPassword {
+    display: grid;
+    padding-top: 20px;
+}
+
+.emailPassword label {
+    position: relative;
+    font-family: "inter";
+    font-size: 15px;
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+.emailPassword input {
+    margin-bottom: 10px;
+    background-color: transparent;
+    color:black;
+    border: none;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+    outline: 0;
+    transition: all 0.2s ease;
+}
+
+
+.emailPassword input:not(:placeholder-shown) {
+    padding: 20px 0 1px 0;
+}
+
+.emailPassword input:not(:placeholder-shown) + label {
+    transform: translateY(-50px);
+    opacity: 0.7;
+}
+
+.emailPassword button{
+    font-family: "inter";
+    margin-left: 7vw;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 80px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 7px 6px -1px rgba(0,0,0,.13); 
+    background-color: #93eadc;
+    transition:  all .3s ease;
+    cursor: pointer;
+}
+
+.emailPassword button:hover{
+    transform:  translateY(-3px);
+    box-shadow:  0 2px 6px -1px rgba(black);
+}

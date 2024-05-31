@@ -1,0 +1,586 @@
+@font-face {
+    font-family: "JosefinBold";
+    src: url("font/josefin/JosefinSans-Bold.ttf");
+}
+@font-face {
+    font-family: "Inter";
+    src: url("font/inter/Inter-SemiBold.ttf");
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.headerContainer {
+    position: relative;
+    z-index: 1000; 
+}
+.backgroundImage {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.brandName h1 {
+    left: 2vw;
+    position: fixed;
+    font-family: "JosefinBold";
+    color: white;
+    text-shadow: 
+        -1px -1px 0 #000, 
+        1px -1px 0 #000, 
+        -1px 1px 0 #000, 
+        1px 1px 0 #000;
+    letter-spacing: 0.05em;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+nav ul {
+    list-style-type: none;
+    margin-top: 3vh; 
+    padding: 0;
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 2vw; 
+}
+nav ul li:last-child {
+    margin-right: 0;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1vw; 
+    font-family: "Inter";
+    text-shadow: 
+        -1px -1px 0 #000, 
+        1px -1px 0 #000, 
+        -1px 1px 0 #000, 
+        1px 1px 0 #000;
+    letter-spacing: 0.05em;
+}
+nav ul li a:hover {
+    color: black;
+    text-shadow: none;
+}
+.icons {
+    position: fixed;
+    top: 3vh; 
+    left: 90vw; 
+    display: flex;
+    cursor: pointer;
+}
+.icons i {
+    margin-left: 1.5vw;
+    color: white;
+    text-shadow: 
+        -1px -1px 0 #000, 
+        1px -1px 0 #000, 
+        -1px 1px 0 #000, 
+        1px 1px 0 #000;
+}
+.icons i:hover {
+    color: black;
+    text-shadow: none;
+}
+.banner1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 35vh;
+    left: 12.5vw; 
+    text-align: center;
+    font-size: 1.9vw;
+    color: white;
+}
+.title {
+    margin-bottom: -0.2vh;
+    font-family: "JosefinBold";
+}
+.desc {
+    font-size: 1.2vw;
+    font-family: "Inter";
+}
+.btnShop {
+    margin-top: 1vh;
+    width: 10vw;
+    padding: 1vh 1vw;
+    border-radius: 2vw; 
+    border: 0.2vw solid white;
+    background-color: transparent;
+    border-width: 2px;
+    color: white;
+    font-family: "Inter";
+    cursor: pointer;
+}
+.btnShop:hover {
+    background-color: white;
+    color: black;
+}
+.banner2 {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: column;
+    position: absolute;
+    align-items: center;
+    width: 400%;
+    top: 20vh; 
+    left: 50vw; 
+    overflow: hidden;
+    mask-image: linear-gradient(90deg, transparent, white 5%,  transparent);
+}
+@keyframes animate {
+    0% {
+        trasnform: translateX(100%);
+    }
+    50%{
+        transform: translateX(-900%);
+    }
+    100%{
+        trasnform: translateX(100%);
+    }
+}
+.img-container {
+    animation: animate var(--t) linear infinite;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1vw;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.img-container:hover{
+    background-color: rgba(255,255,255, 0.5);
+}
+.img-container img {
+    width: 100%;
+    margin: -5vh; 
+}
+.img-container h2{
+    text-align: center;
+    size: 5vw;
+    font-family: "JosefinBold";
+    color: white;
+    text-shadow: 
+        -1px -1px 0 #000, 
+        1px -1px 0 #000, 
+        -1px 1px 0 #000, 
+        1px 1px 0 #000;
+}
+#types_jewelry h2{
+    margin: 3vw;
+    text-align: center;
+    font-family: "JosefinBold";
+    font-size: 3vw;
+}
+.container{
+    background-image: url("images/background/bg\ \(9\).png");
+    margin-top: -50px;
+    padding-top: 10vh
+}
+.containerss{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10vh;
+}
+.col1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 20px;
+}
+.cont{
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 7px 10px -1px rgba(0,0,0,.13);
+    transition:  all .3s ease;
+    cursor: pointer;
+}
+.cont:hover{
+    transform:  translateY(-5px);
+}
+#br{
+    width: 20vw;
+}
+#ea{
+    width: 15vw;
+    height: 30vh;
+    margin-top: 25px;;
+}
+#pe{
+    width: 18vw;
+}
+#ri{
+    width: 16vw;
+    margin-top: 22px;
+}
+#ne{
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+    width: 30vw;
+}
+.bsArea h2{
+    font-size: 3vw;
+    font-family: "Josefinbold";
+    text-align: center;
+}
+.bsContainer{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.pictures{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+.pictures:hover{
+    transform: translateY(-10px);
+}
+.pictures button{
+    padding: 1vh;
+    margin: 15px;
+    font-family: "inter";
+    border: solid black;
+    border-width: 1px;
+    border-radius: 10px;
+    background-color: transparent;
+    width: 15vw;
+    margin-left: 2.5vw;
+    transition: 0.3s ease-in-out;
+}
+.pictures button:hover{
+    background-color: black;
+    color: white;
+}
+.bs{
+    width: 20vw;
+}
+.pictures h2{
+    text-align: center;
+    font-size: 1vw;
+    font-family: "inter";
+}
+.salesContainer{
+    border:solid black;
+    border-width: 1px;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    width: 200%;
+    animation: scrolling 10s infinite linear;
+}
+.bannerSale{
+    margin: 0.5vw;
+    font-size: 1vw;
+    font-family: "inter";
+}
+.promoTitles{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 25vh;
+}
+.promoPics{
+    width: 50vw;
+    margin-top: -4px;
+}
+.img{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.img h2{
+    font-family: "Josefinbold";
+    margin-top: -35vh;
+}
+.img button{
+    width: 10vw;
+    margin-top: -2vh;
+    margin-left: 20vw;
+    padding: 0.7vh;
+    font-family: "inter";
+    background-color: transparent;
+    border: solid black 1px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btnShop1:hover{
+    transform: translateY(-5px);
+}
+.containerFoot{
+    padding: 0;
+    margin-top: 30vh;
+}
+
+.contents{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    margin-bottom: 3vh;
+}
+
+.contents h2{
+    font-family: "josefinbold";
+    margin-bottom: 10px;
+}
+
+.contents a{
+    color: black;
+    text-decoration: none;
+    font-size: 0.8vw;
+    font-family: "inter";
+    position: relative;
+    padding: 1px;
+}
+
+.contents i{
+    font-size: 10px;
+}
+
+.contactUs{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.aboutUs{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.socials{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.aboutUsContent{
+    display: grid;
+    grid: 27vw / auto auto;
+    justify-content: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+}
+.aboutUsContent h1{
+    font-family: "josefinbold";
+}
+.aboutUsContent p{
+    margin-top:-2vh;
+    text-justify: auto;
+    font-family: "inter";
+}
+.colImg{
+    padding:0;
+    width: 100%;
+}
+#popUps{
+    display: none;
+    position: fixed;
+    top: -200px;
+}
+.popUpcol{
+    border: solid;
+    display: flex;
+    justify-content: space-around;
+    padding:0;
+    margin:20vw;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+}
+.popUpImg{
+    background-color: white;
+    border-radius: 10px;
+}
+.popUpcol i{
+    margin-top: 1.5vh;
+    position: absolute;
+    margin-left: 56vw;
+    cursor: pointer;
+}
+.popUpcol1{
+    text-align: center;
+    margin:1vw
+}
+.popUpcol1 h2{
+    font-family: "josefinbold";
+    font-size: 2.5vw;
+    margin-right: 2vw;
+}
+.popUpcol1 p{
+    margin-right: 2vw;
+    font-family: "inter";
+    text-align: justify;
+    text-justify: inter-word;
+}
+.btnPop{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    font-family: "inter";
+    font-size: 10px;
+    width: 90%;
+    margin-top: 21vh;
+    color: black;
+}
+.btnPop:hover{
+    background-color: black;
+    color: white;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  top:0vh;
+  right:0;
+  border: 3px solid black;
+  z-index: 1000;
+}
+
+.form-container {
+  max-width: 300px;
+  height: 100%;
+  padding: 10px;
+  background-color: white;
+}
+
+.btns{
+    margin-top: 57vh;
+    position: absolute;
+    width: 94%;
+}
+.form-container .btn {
+  background-color: black;
+  color: white;
+  font-family: "inter";
+  border: 1px;
+  border-radius: 10px;
+  padding: 16px 20px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+.prodInfo{
+    display: flex;
+}
+.prodInfo span{
+    font-size:2vh;
+}
+#prodImg{
+    width: 5vw;
+}
+.form-container h1{
+    font-family: "inter";
+    font-size: 5vh;
+}
+.prodInfo{
+    display: flex;
+    flex-direction: row;
+}
+.imgnname{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.imgnname span{
+    margin: 10px
+}
+.prodInfo span{
+    font-family: "inter";
+}
+.quantity{
+    margin-top: 20px;
+    margin-left: 10px;
+    text-align: center;
+}
+.atcbtn{
+    border: none;
+    background-color: none;
+    cursor: pointer;
+}
+@keyframes scrolling{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-50%);
+    }
+}
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .brandName h1 {
+        font-size: 3vw;
+    }
+    nav ul li a {
+        font-size: 1.2vw;
+    }
+    .backgroundImage{
+        height: 40vh;
+    }
+    .btnShop {
+        width: 10vw;
+        font-size: 1.5vw; 
+        border-radius: 5vw;
+        border-width: 0.1vw;
+    }
+    .banner1{
+        top:20vw;
+    }
+    .banner2{
+        top:15vw;
+        right:10vw;
+        font-size: 1.5vw;
+        text-align: center;
+    }
+}

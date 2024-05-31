@@ -1,0 +1,452 @@
+@font-face {
+    font-family: "JosefinBold";
+    src: url("font/josefin/JosefinSans-Bold.ttf");
+}
+@font-face {
+    font-family: "Inter";
+    src: url("font/inter/Inter-SemiBold.ttf");
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.brandName h1 {
+    left: 2vw;
+    position: fixed;
+    font-family: "JosefinBold";
+    color: white;
+    text-shadow: 
+        -1px -1px 0 #000, 
+        1px -1px 0 #000, 
+        -1px 1px 0 #000, 
+        1px 1px 0 #000;
+    letter-spacing: 0.05em;
+}
+.headerContainer {
+    position: relative;
+    z-index: 1000; 
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+nav ul {
+    list-style-type: none;
+    margin-top: 3vh; 
+    padding: 0;
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 2vw; 
+}
+nav ul li:last-child {
+    margin-right: 0;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1vw; 
+    font-family: "Inter";
+    text-shadow: 
+        -1px -1px 0 #000, 
+        1px -1px 0 #000, 
+        -1px 1px 0 #000, 
+        1px 1px 0 #000;
+    letter-spacing: 0.05em;
+}
+nav ul li a:hover {
+    color: black;
+    text-shadow: none;
+}
+.icons {
+    position: fixed;
+    top: 3vh; 
+    left: 90vw; 
+    display: flex;
+    cursor: pointer;
+    position: fixed;
+}
+.icons i {
+    margin-left: 1.5vw;
+    color: white;
+    text-shadow: 
+        -1px -1px 0 #000, 
+        1px -1px 0 #000, 
+        -1px 1px 0 #000, 
+        1px 1px 0 #000;
+}
+.icons i:hover {
+    color: black;
+    text-shadow: none;
+}
+.bannerContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.col1{
+    margin-top: 5vw;
+    margin-left: 5vw;
+    margin-right: 2vw;
+    transition: 0.3s ease-in-out;
+}
+.col1:hover{
+    transform: translateY(-10px);
+}
+.gridPic1{
+    width: 30vw;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.col2{
+    display: grid;
+    justify-content: space-between;
+    grid: 19.5vw / 19.5vw 19.5vw;
+    margin-left: -20vw;
+    margin-right: 5vw;
+    margin-top: 5vw;
+}
+.gridPic2{
+    width: 18vw;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: 0.3s ease-in-out;
+}
+.gridPic2:hover{
+    transform: translateY(-10px);
+}
+
+.Container{
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 5vw;
+}
+.Container1{
+    padding-bottom: 20px;
+    overflow-x: scroll;
+    scroll-behavior:smooth;
+}
+.Products{
+    margin: 15px;
+    display: inline-flex;
+}
+.prods h2{
+    margin-top:10vw;
+    font-family: "josefinbold";
+    font-size: 3vw;
+}
+.productPicture{
+    width: 20vw;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    text-align: center;
+    font-family: "inter";
+    font-size: 0.9vw;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.btnBuy {
+    margin-bottom: 10px;
+    width: 10vw;
+    padding: 1vh 1vw;
+    border-radius: 2vw; 
+    border: 0.2vw solid black;
+    background-color: transparent;
+    border-width: 2px;
+    font-family: "Inter";
+    align-self: center;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.btnBuy:hover {
+    background-color: black;
+    color: white;
+    transform: translateY(-10px);
+}
+.salesContainer{
+    border:solid black;
+    border-width: 1px;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    width: 200%;
+    animation: scrolling 10s infinite linear;
+}
+.bannerSale{
+    margin: 0.5vw;
+    font-size: 1vw;
+    font-family: "inter";
+}
+.promoTitles{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.promoPics{
+    width: 50vw;
+    margin-top: -4px;
+}
+.img{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.img h2{
+    font-family: "Josefinbold";
+    margin-top: -35vh;
+}
+.img button{
+    width: 10vw;
+    margin-top: -2vh;
+    margin-left: 20vw;
+    padding: 0.7vh;
+    font-family: "inter";
+    background-color: transparent;
+    border: solid black 1px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.btnShop1:hover{
+    transform: translateY(-5px);
+}
+.containerFoot{
+    padding: 0;
+    margin-top: 30vh;
+}
+
+.contents{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+
+.contents h2{
+    font-family: "josefinbold";
+    margin-bottom: 10px;
+}
+
+.contents a{
+    color: black;
+    text-decoration: none;
+    font-size: 0.8vw;
+    font-family: "inter";
+    position: relative;
+    padding: 1px;
+}
+
+.contents i{
+    font-size: 10px;
+}
+
+.contactUs{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.aboutUs{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.socials{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#popUps{
+    display: none;
+    position: fixed;
+    top: -200px;
+}
+.popUpcol{
+    border: solid;
+    display: flex;
+    justify-content: space-around;
+    padding:0;
+    margin:20vw;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+}
+.popUpImg{
+    background-color: white;
+    border-radius: 10px;
+}
+.popUpcol i{
+    margin-top: 1.5vh;
+    position: absolute;
+    margin-left: 56vw;
+    cursor: pointer;
+}
+.popUpcol1{
+    text-align: center;
+    margin:1vw
+}
+.popUpcol1 h2{
+    font-family: "josefinbold";
+    font-size: 2.5vw;
+    margin-right: 2vw;
+}
+.popUpcol1 p{
+    margin-right: 2vw;
+    font-family: "inter";
+    text-align: justify;
+    text-justify: inter-word;
+}
+.btnPop{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    font-family: "inter";
+    font-size: 10px;
+    width: 90%;
+    margin-top: 21vh;
+    color: black;
+}
+.btnPop:hover{
+    background-color: black;
+    color: white;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  top:0vh;
+  right:0;
+  border: 3px solid black;
+  z-index: 1000;
+}
+
+.form-container {
+  max-width: 300px;
+  height: 100%;
+  padding: 10px;
+  background-color: white;
+}
+
+.btns{
+    margin-top: 57vh;
+    position: absolute;
+    width: 94%;
+}
+.form-container .btn {
+  background-color: black;
+  color: white;
+  font-family: "inter";
+  border: 1px;
+  border-radius: 10px;
+  padding: 16px 20px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+.prodInfo{
+    display: flex;
+}
+.prodInfo span{
+    font-size:2vh;
+}
+#prodImg{
+    width: 5vw;
+}
+.form-container h1{
+    font-family: "inter";
+    font-size: 5vh;
+}
+.prodInfo{
+    display: flex;
+    flex-direction: row;
+}
+.imgnname{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.imgnname span{
+    margin: 10px
+}
+.prodInfo span{
+    font-family: "inter";
+}
+.quantity{
+    margin-top: 20px;
+    margin-left: 10px;
+    text-align: center;
+}
+.atcbtn{
+    border: none;
+    background-color: none;
+    cursor: pointer;
+}
+@keyframes scrolling{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-50%);
+    }
+}
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .brandName h1 {
+        font-size: 3vw;
+    }
+    nav ul li a {
+        font-size: 1.2vw;
+    }
+    .backgroundImage{
+        height: 40vh;
+    }
+    .btnShop {
+        width: 10vw;
+        font-size: 1.5vw; 
+        border-radius: 5vw;
+        border-width: 0.1vw;
+    }
+    .banner1{
+        top:20vw;
+    }
+    .banner2{
+        top:15vw;
+        right:10vw;
+        font-size: 1.5vw;
+        text-align: center;
+    }
+}
