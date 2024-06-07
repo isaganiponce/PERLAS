@@ -129,8 +129,13 @@ function addtocart(event) {
         const listTab = document.querySelector('.form-container .prodInfo');
         listTab.appendChild(cartitem);
         listTab.appendChild(cartinfo);
+        
+        const removeitems = document.querySelector(".remove");
+        removeitems.addEventListener("click", function(){
+            const itemss = 
+            removeitems.remove(".items")
+        })
     }
-
     updateTotalPrice();
 }
 
